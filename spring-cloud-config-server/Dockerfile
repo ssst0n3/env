@@ -9,7 +9,7 @@ ARG DIR_NAME=spring-cloud-config-${RELEASE}
 FROM busybox
 ARG VERSION
 ARG TAG
-ENV https_proxy=http://100.66.25.159:8118
+# ENV https_proxy=http://100.66.25.159:8118
 RUN wget -O spring-cloud-config.tar.gz https://github.com/spring-cloud/spring-cloud-config/archive/${TAG}.tar.gz
 RUN wget -O settings.xml https://mirrors.huaweicloud.com/v1/configurations/maven
 
